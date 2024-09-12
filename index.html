@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+	<head>
+		<title>Моя страница</title>
+	</head>
+
+	<body>
+		<h1 id="cat">Задание 1</h1></a>
+		<h2>Список гиперссылок</h2>
+			<ul>
+				<li>20. нумерованный список ссылок с подписями title :</li>
+				<li><a href="http://www.kubsu.ru/ru" title="Официальный сайт Кубанского Государственного университета">1. КубГУ</a></li>
+				<li><a href="https://www.kubsu.ru/ru" title="Официальный сайт Кубанского Государственного университета">2. КубГУ но https</a></li>
+				<li><a href="https://www.kubsu.ru/ru" title="кубик">3. <img src="photo_2024-01-07_20-33-10.jpg" style="width: 200px;" /></a></li>
+		
+				<li><a href="papka/inner page.txt" >4. Внутрення страница</a></li>
+				<li><a href="index.html" >5. Сокращённая на главную страницу</a></li>
+		
+				<li><a href="#cat" >6. Ссылка на заголовок</a></li>
+				<li><a href="https://vk.com/kubsu_official?from=search&w=wall-137765556_17463&z=album-137765556_305680608" >7.ссылку с тремя параметрами в URL</a></li>
+				<li><a href="https://www.kubsu.ru/ru?id=0347901" >8. ссылку с параметром id в URL</a></li>
+
+				<li><a href="./mama_lama.txt" >9. относительную на страницу в текущем каталоге</a></li>
+				<li><a href="./about/salfetka.txt" >10. относительную на страницу в каталоге about</a></li>
+				<li><a href="../osminog.txt" >11. относительную на страницу в каталоге уровнем выше текущего</a></li>
+				<li><a href="../../sobaka.txt" >12. относительную на страницу в каталоге двумя уровнями выше</a></li>
+				<li>13. контекстную в <a href="https://www.kubsu.ru/ru" >тексте</a> абзаца</li>
+				<li><a href="https://www.kubsu.ru/ru/#main-content" >14. ссылку на фрагмент страницы стороннего сайта</a></li>
+				<li>15. ссылки из прямоугольных и круглых областей картинки (HTML-тег map)</li>
+		
+				<map name="krugipryam">
+					<area shape="circle" coords="50, 50, 50" href="https://www.kubsu.ru/ru" />
+					<area shape="rect" coords="140, 140, 200, 300" href="https://www.kubsu.ru/ru" />
+				</map>
+				<li><img usemap="#krugipryam" src="photo_2024-01-07_20-33-10.jpg" style="width: 200px;"/></li>
+
+				<li><a href="" >16. ссылку с пустым href</a></li>
+				<li><a https://www.kubsu.ru/ru>17. ссылку без href</a></li>
+				<li><a href="http://www.kubsu.ru/ru" rel="nofolow" >18. ссылку, по которой запрещен переход поисковикам</a></li>
+				<li><noindex><a href="http://www.kubsu.ru/ru" >19. запрещенную для индексации поисковиками</a></noindex></li>
+				
+				<li><a href="ftp://vasya_pupkin:123456@bingus.ru/Temp?file123.txt" >21. ссылку на файл на сервере FTP с авторизацией</a></li>
+			</ul>
+
+		<h2>Форма</h2>
+			<form action="/"
+				method="POST">
+
+			<label>
+				Введите ФИО:<br />
+				<input name="field-name-1" placeholder="Иванов Иван Иванович." />
+			</label><br />
+
+			<label>
+				Введите номер телефона:<br />
+				<input type="tel" placeholder="+79180000000" name="phone" />
+			</label><br />
+
+			<label>
+				Введите e-mail адрес:<br />
+				<input name="field-email" placeholder="example@mail.ru" type="email" />
+			</label><br />
+
+			<label>
+				Ваша дата рождения:<br />
+				<input name="field-date" value="2000-01-01" type="date" />
+			</label><br />
+
+			<label>
+				Ваш пол:<br />
+				<input type="radio" name="radio-group-1" value="Женский" />
+				Женский
+			</label>
+
+			<label>
+				<input type="radio" name="radio-group-1" value="Мужской" />
+				Мужской
+			</label><br />
+
+			<label>
+				Ваш любимый язык программирования:
+				<br />
+				<select name="field-name-11[]" multiple="multiple">
+					<option value="Pascal">Pascal</option>
+					<option value="C">C</option>
+					<option value="C++">C++</option>
+					<option value="JavaScript">JavaScript</option>
+					<option value="PHP">PHP</option>
+					<option value="Python">Python</option>
+					<option value="Java">Java</option>
+					<option value="Haskel">Haskel</option>
+					<option value="Clojure">Clojure</option>
+					<option value="Prolog">Prolog</option>
+					<option value="Scala">Scala</option>
+				</select>
+			</label><br />
+
+			<label>
+				Ваша биография:<br />
+				<textarea name="field-name-2">Введите текст</textarea>
+			</label><br />	
+
+			<label>
+				Чекбокс:<br />
+				<input type="checkbox" name="check-1" /> С контрактом ознакомлен(а)
+			</label><br />
+			
+			<p><label>
+				<input type="submit" value="Сохранить" />
+			</label></p>
+	</body>
+
+</html>		
