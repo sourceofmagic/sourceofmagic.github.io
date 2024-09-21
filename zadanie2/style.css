@@ -49,3 +49,36 @@ nav {
 	background-color: #f7dbc1;
 	padding-left: 10px;
 }
+
+table {
+	table-layout: fixed;
+	width: 60%;
+	margin: 20px auto;
+	border: 3px solid #164d25;
+	border-collapse: collapse;
+	text-align: center;
+	background-color: #eb958f;
+}
+
+th, td {
+	border: 3px solid #164d25;
+	padding: 5px;
+}
+
+th{
+	background-color: #6cad4e;
+}
+
+tr:nth-child(odd) td {
+	background-color: #f7dbc1;
+}
+
+tr:nth-child(even) td {
+	background-color: burlywood;
+}
+
+.table {
+	background-color: #f7dbc1;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
