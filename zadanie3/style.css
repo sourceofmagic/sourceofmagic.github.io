@@ -1,28 +1,37 @@
+.header {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 15em;
+	gap: 0.2em;
+}
+
 header {
-	position: relative;
-	text-align: center;
+	display: flex;
+	justify-content: space-evenly;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	color: #eb958f;
 	margin: 0;
 	background-color: #164d25;
-	height: 95px;
-	padding-top: 10px;
-	border: 7px solid olive;
+	height: 6.em;
+	padding-top: 0.5em;
+	padding-bottom: 0.2em;
+	border: 0.3em solid olive;
 }
 
 .main_info {
-	width: 960px;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	width: 100%;
 	margin: 0 auto;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	color: #164d25;
 }
 
 #logo {
-	float: left;
-	width: 85px;
-	height: 85px;
-	position: absolute;
-	left: 18%;
+	width: 5em;
+	height: 5em;
 }
 
 a {
@@ -30,21 +39,31 @@ a {
 }
 
 .referenses {
+	order: 2;
 	background-color: #f7dbc1;
 	padding-bottom: 10px;
 	padding-left: 5px;
 }
 
 nav {
-	float: right;
-	right: 18%;
-	background-color: #eb958f;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.5em;
 	position: relative;
-	right: 18%;
-	margin: 0;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: #eb958f;
+	background-color: #f7dbc1;
+	height: 5em;
+	padding: 0.2em;
+}
+
+footer{
+	order: 4;
 }
 
 .forma {
+	order: 3;
 	background-color: #f7dbc1;
 	padding-left: 10px;
 }
@@ -56,6 +75,7 @@ table {
 	border: 3px solid #164d25;
 	border-collapse: collapse;
 	text-align: center;
+	font-size: 2vw;
 	background-color: #eb958f;
 }
 
@@ -64,7 +84,7 @@ th, td {
 	padding: 5px;
 }
 
-th{
+th {
 	background-color: #6cad4e;
 }
 
@@ -77,7 +97,55 @@ tr:nth-child(even) td {
 }
 
 .table {
+	order: 1;
 	background-color: #f7dbc1;
 	padding-left: 10px;
 	padding-bottom: 10px;
+}
+
+body{
+	text-align: center;
+}
+
+body li{
+	text-align:initial;
+}
+
+@media screen and (min-width: 800px){
+	.header {
+		flex-direction: row;
+		gap: initial;
+		height: 8em;
+	}
+
+	header {
+		flex: 4;
+		height: 6em;
+		border-right: hidden;
+	}
+	nav {
+		gap: 1em;
+		align-items: center;
+		flex: 1;
+		height: 6em;
+		flex-direction: row;
+		border: 0.3em solid olive;
+		border-left: hidden;
+		background-color: #164d25;
+		padding-top: 0.5em;
+		padding-bottom: 0.2em;
+	}
+
+	.main_info {
+		width: 960px;
+
+	}
+
+	table{
+		font-size: initial;
+	}
+
+	nav a {
+		color: #eb958f;
+	}
 }
