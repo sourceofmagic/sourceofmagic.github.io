@@ -2,180 +2,205 @@
 
 <html lang="ru">
 
-	<head>
-		<title>zadanie 3</title>
-		<link href="style.css" rel="stylesheet" />
-	</head>
+<head>
+    <title>zadanie 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="style.css" rel="stylesheet" />
+</head>
 
-    <body>
+<body>
+    <div class="header">
+
         <header>
             <a href=""><img id="logo" src="image.png" alt="логотип сайта" /></a>
-            <nav>
-                <a href="#spisok">Гиперссылки</a>
-                <a href="#form">Формы</a>
-                <a href="#tabl">Таблица</a>
-            </nav>
-            <h1 id="cat">Задание 1</h1>
+            
+            <h1 id="cat">Задание 3</h1>
         </header>
 
-        <div class="main_info">
+        <nav class="nav">
+            <a href="#spisok">Гиперссылки</a>
+            <a href="#form">Формы</a>
+            <a href="#tabl">Таблица</a>
+        </nav>
 
-            
+    </div>
 
-            <div class="referenses">
+    <div class="main_info">
+        
 
-                <h2 id="spisok">Список гиперссылок</h2>
 
-                <ul>
-                    <li><a href="http://www.kubsu.ru/ru" title="Официальный сайт Кубанского Государственного университета">1. КубГУ</a></li>
-                    <li><a href="https://www.kubsu.ru/ru" title="Официальный сайт Кубанского Государственного университета">2. КубГУ но https</a></li>
-                    <li><a href="https://www.kubsu.ru/ru" title="кубик">3. <img src="photo_2024-01-07_20-33-10.jpg" alt="ссылка на сайт кубгу" style="width: 200px;" /></a></li>
+        <div class="referenses">
 
-                    <li><a href="" title="ссылка на txt файл">4. Внутрення страница</a></li>
-                    <li><a href="index.html" title="на главную">5. Сокращённая на главную страницу</a></li>
+            <h2 id="spisok">Список гиперссылок</h2>
 
-                    <li><a href="#cat">6. Ссылка на заголовок</a></li>
-                    <li><a href="https://vk.com/kubsu_official?from=search&w=wall-137765556_17463&z=album-137765556_305680608">7.ссылку с тремя параметрами в URL</a></li>
-                    <li><a href="https://moodle.kubsu.ru/course/view.php?id=780">8. ссылку с параметром id в URL</a></li>
+            <ul>
+                <li><a href="http://www.kubsu.ru/ru" title="Официальный сайт Кубанского Государственного университета">1. КубГУ</a></li>
+                <li><a href="https://www.kubsu.ru/ru" title="Официальный сайт Кубанского Государственного университета">2. КубГУ но https</a></li>
+                <li><a href="https://www.kubsu.ru/ru" title="кубик">3. <img src="photo_2024-01-07_20-33-10.jpg" alt="ссылка на сайт кубгу" style="width: 200px;" /></a></li>
 
-                    <li><a href="">9. относительную на страницу в текущем каталоге</a></li>
-                    <li><a href="">10. относительную на страницу в каталоге about</a></li>
-                    <li><a href="">11. относительную на страницу в каталоге уровнем выше текущего</a></li>
-                    <li><a href="">12. относительную на страницу в каталоге двумя уровнями выше</a></li>
-                    <li>13. контекстную в <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">тексте</a> абзаца</li>
-                    <li><a href="https://skyeng.ru/articles/200-nepravilnyh-glagolov-anglijskogo-yazyka/#:~:text=%D0%BF%D0%BE%D0%BF%D1%83%D0%BB%D1%8F%D1%80%D0%BD%D1%8B%D1%85%20%D0%B8%D0%B7%20%D0%BD%D0%B8%D1%85.-,%D0%A2%D0%BE%D0%BF%2D200%20%D0%BD%D0%B5%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B3%D0%BB%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2,-%D0%9E%D0%B1%D1%80%D0%B0%D1%82%D0%B8%D1%82%D0%B5%20%D0%B2%D0%BD%D0%B8%D0%BC%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BD%D0%B0">14. ссылку на фрагмент страницы стороннего сайта</a></li>
-                    <li>15. ссылки из прямоугольных и круглых областей картинки (HTML-тег map)</li></ul>
+                <li><a href="" title="ссылка на txt файл">4. Внутрення страница</a></li>
+                <li><a href="index.html" title="на главную">5. Сокращённая на главную страницу</a></li>
 
-                    <map name="krugipryam">
-                        <area shape="circle" coords="50,50,50" href="https://www.kubsu.ru/ru" alt="круг"/>
-                        <area shape="rect" coords="140,140,200,300" href="https://www.kubsu.ru/ru/fktipm" alt="прямоугольник"/>
-                    </map>
+                <li><a href="#cat">6. Ссылка на заголовок</a></li>
+                <li><a href="https://vk.com/kubsu_official?from=search&w=wall-137765556_17463&z=album-137765556_305680608">7.ссылку с тремя параметрами в URL</a></li>
+                <li><a href="https://moodle.kubsu.ru/course/view.php?id=780">8. ссылку с параметром id в URL</a></li>
 
-                    <ul><li><img usemap="#krugipryam" src="photo_2024-01-07_20-33-10.jpg" alt="ссылки на страницы сайта кубгу" style="width: 200px;" /></li>
+                <li><a href="">9. относительную на страницу в текущем каталоге</a></li>
+                <li><a href="">10. относительную на страницу в каталоге about</a></li>
+                <li><a href="">11. относительную на страницу в каталоге уровнем выше текущего</a></li>
+                <li><a href="">12. относительную на страницу в каталоге двумя уровнями выше</a></li>
+                <li>13. контекстную в <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">тексте</a> абзаца</li>
+                <li><a href="https://skyeng.ru/articles/200-nepravilnyh-glagolov-anglijskogo-yazyka/#:~:text=%D0%BF%D0%BE%D0%BF%D1%83%D0%BB%D1%8F%D1%80%D0%BD%D1%8B%D1%85%20%D0%B8%D0%B7%20%D0%BD%D0%B8%D1%85.-,%D0%A2%D0%BE%D0%BF%2D200%20%D0%BD%D0%B5%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B3%D0%BB%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2,-%D0%9E%D0%B1%D1%80%D0%B0%D1%82%D0%B8%D1%82%D0%B5%20%D0%B2%D0%BD%D0%B8%D0%BC%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BD%D0%B0">14. ссылку на фрагмент страницы стороннего сайта</a></li>
+                <li>15. ссылки из прямоугольных и круглых областей картинки (HTML-тег map)</li>
+            </ul>
 
-                    <li><a href="">16. ссылку с пустым href</a></li>
-                    <li><a>17. ссылку без href</a></li>
-                    <li><a href="http://www.kubsu.ru/ru" rel="nofolow">18. ссылку, по которой запрещен переход поисковикам</a></li>
-                    <li><a href="http://www.kubsu.ru/ru">19. запрещенную для индексации поисковиками</a></li>
-                    <li><a href="#spisok" title="ссылка на нумерованный список ссылок с подписями title">20. нумерованный список ссылок с подписями title</a></li>
-                    <li><a href="ftp://vasya_pupkin:123456@bingus.ru/Temp?file123.txt">21. ссылку на файл на сервере FTP с авторизацией</a></li>
-                </ul>
+            <map name="krugipryam">
+                <area shape="circle" coords="50,50,50" href="https://www.kubsu.ru/ru" alt="круг" />
+                <area shape="rect" coords="140,140,200,300" href="https://www.kubsu.ru/ru/fktipm" alt="прямоугольник" />
+            </map>
 
-            </div>
+            <ul>
+                <li><img usemap="#krugipryam" src="photo_2024-01-07_20-33-10.jpg" alt="ссылки на страницы сайта кубгу" style="width: 200px;" /></li>
 
-            <div class="table">
+                <li><a href="">16. ссылку с пустым href</a></li>
+                <li><a>17. ссылку без href</a></li>
+                <li><a href="http://www.kubsu.ru/ru" rel="nofolow">18. ссылку, по которой запрещен переход поисковикам</a></li>
+                <li><a href="http://www.kubsu.ru/ru">19. запрещенную для индексации поисковиками</a></li>
+                <li><a href="#spisok" title="ссылка на нумерованный список ссылок с подписями title">20. нумерованный список ссылок с подписями title</a></li>
+                <li><a href="ftp://vasya_pupkin:123456@bingus.ru/Temp?file123.txt">21. ссылку на файл на сервере FTP с авторизацией</a></li>
+            </ul>
 
-                <h2 id="tabl">Таблица</h2>
+        </div>
 
-                <table>
-                    <tr>
-                        <th>Столбец 1</th>
-                        <th>Столбец 2</th>
-                        <th>Столбец 3</th>
-                        <th>Столбец 4</th>
-                        <th>Столбец 5</th>
-                    </tr>
+        <div class="table">
 
-                    <tr>
-                        <td>11</td><td>12</td><td rowspan="2">13</td><td>14</td><td>15</td>
-                    </tr>
+            <h2 id="tabl">Таблица</h2>
 
-                    <tr>
-                        <td>21</td><td>22</td><td>24</td><td>25</td>
-                    </tr>
+            <table>
+                <tr>
+                    <th>Столбец 1</th>
+                    <th>Столбец 2</th>
+                    <th>Столбец 3</th>
+                    <th>Столбец 4</th>
+                    <th>Столбец 5</th>
+                </tr>
 
-                    <tr>
-                        <td>31</td><td colspan="3">32, 33, 34</td><td>35</td>
-                    </tr>
+                <tr>
+                    <td>11</td>
+                    <td>12</td>
+                    <td rowspan="2">13</td>
+                    <td>14</td>
+                    <td>15</td>
+                </tr>
 
-                    <tr>
-                        <td>41</td><td>42</td><td>43</td><td>44</td><td rowspan="2">45</td>
-                    </tr>
+                <tr>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>24</td>
+                    <td>25</td>
+                </tr>
 
-                    <tr>
-                        <td>51</td><td>52</td><td>53</td><td>54</td>
-                    </tr>
-                </table>
+                <tr>
+                    <td>31</td>
+                    <td colspan="3">32, 33, 34</td>
+                    <td>35</td>
+                </tr>
 
-            </div>
+                <tr>
+                    <td>41</td>
+                    <td>42</td>
+                    <td>43</td>
+                    <td>44</td>
+                    <td rowspan="2">45</td>
+                </tr>
 
-            <div class="forma">
+                <tr>
+                    <td>51</td>
+                    <td>52</td>
+                    <td>53</td>
+                    <td>54</td>
+                </tr>
+            </table>
 
-                <h2 id="form">Форма</h2>
-                <form action="/"
-                      method="POST">
+        </div>
 
+        <div class="forma">
+
+            <h2 id="form">Форма</h2>
+            <form action="/"
+                  method="POST">
+
+                <label>
+                    Введите ФИО:<br />
+                    <input name="field-name-1" placeholder="Иванов Иван Иванович." />
+                </label><br />
+
+                <label>
+                    Введите номер телефона:<br />
+                    <input type="tel" placeholder="+79180000000" name="phone" />
+                </label><br />
+
+                <label>
+                    Введите e-mail адрес:<br />
+                    <input name="field-email" placeholder="example@mail.ru" type="email" />
+                </label><br />
+
+                <label>
+                    Ваша дата рождения:<br />
+                    <input name="field-date" value="2000-01-01" type="date" />
+                </label><br />
+
+                <label>
+                    Ваш пол:<br />
+                    <input type="radio" name="radio-group-1" value="Женский" />
+                    Женский
+                </label>
+
+                <label>
+                    <input type="radio" name="radio-group-1" value="Мужской" />
+                    Мужской
+                </label><br />
+
+                <label>
+                    Ваш любимый язык программирования:
+                    <br />
+                    <select name="field-name-11[]" multiple="multiple">
+                        <option value="Pascal">Pascal</option>
+                        <option value="C">C</option>
+                        <option value="C++">C++</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="PHP">PHP</option>
+                        <option value="Python">Python</option>
+                        <option value="Java">Java</option>
+                        <option value="Haskel">Haskel</option>
+                        <option value="Clojure">Clojure</option>
+                        <option value="Prolog">Prolog</option>
+                        <option value="Scala">Scala</option>
+                    </select>
+                </label><br />
+
+                <label>
+                    Ваша биография:<br />
+                    <textarea name="field-name-2">Введите текст</textarea>
+                </label><br />
+
+                <label>
+                    Чекбокс:<br />
+                    <input type="checkbox" name="check-1" /> С контрактом ознакомлен(а)
+                </label><br />
+
+                <p>
                     <label>
-                        Введите ФИО:<br />
-                        <input name="field-name-1" placeholder="Иванов Иван Иванович." />
-                    </label><br />
-
-                    <label>
-                        Введите номер телефона:<br />
-                        <input type="tel" placeholder="+79180000000" name="phone" />
-                    </label><br />
-
-                    <label>
-                        Введите e-mail адрес:<br />
-                        <input name="field-email" placeholder="example@mail.ru" type="email" />
-                    </label><br />
-
-                    <label>
-                        Ваша дата рождения:<br />
-                        <input name="field-date" value="2000-01-01" type="date" />
-                    </label><br />
-
-                    <label>
-                        Ваш пол:<br />
-                        <input type="radio" name="radio-group-1" value="Женский" />
-                        Женский
+                        <input type="submit" value="Сохранить" />
                     </label>
+                </p>
+            </form>
+        </div>
 
-                    <label>
-                        <input type="radio" name="radio-group-1" value="Мужской" />
-                        Мужской
-                    </label><br />
+        <footer>&copy; Горгедж Екатерина 2024</footer>
 
-                    <label>
-                        Ваш любимый язык программирования:
-                        <br />
-                        <select name="field-name-11[]" multiple="multiple">
-                            <option value="Pascal">Pascal</option>
-                            <option value="C">C</option>
-                            <option value="C++">C++</option>
-                            <option value="JavaScript">JavaScript</option>
-                            <option value="PHP">PHP</option>
-                            <option value="Python">Python</option>
-                            <option value="Java">Java</option>
-                            <option value="Haskel">Haskel</option>
-                            <option value="Clojure">Clojure</option>
-                            <option value="Prolog">Prolog</option>
-                            <option value="Scala">Scala</option>
-                        </select>
-                    </label><br />
+    </div> <!-- самый первый див -->
 
-                    <label>
-                        Ваша биография:<br />
-                        <textarea name="field-name-2">Введите текст</textarea>
-                    </label><br />
+</body>
 
-                    <label>
-                        Чекбокс:<br />
-                        <input type="checkbox" name="check-1" /> С контрактом ознакомлен(а)
-                    </label><br />
-
-                    <p>
-                        <label>
-                            <input type="submit" value="Сохранить" />
-                        </label>
-                    </p>
-		</form>
-            </div>
-
-            <footer>(c) Горгедж Екатерина 2024</footer>
-
-        </div> <!-- самый первый див -->
-
-    </body>
-
-</html>	
+</html>
