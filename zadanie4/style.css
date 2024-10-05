@@ -1,0 +1,113 @@
+header {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: #eb958f;
+	background-color: #164d25;
+	height: 6em;
+	border: 0.3em solid olive;
+}
+
+.main_info {
+	width: 100%;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: #164d25;
+}
+
+#logo {
+	width: 5em;
+	height: 5em;
+}
+
+a {
+	color: #3b0733;
+}
+
+.referenses {
+	background: rgba(247, 219, 193, 0.9);
+}
+
+nav {
+	position: relative;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: #eb958f;
+	background-color: #f7dbc1;
+	height: 5em;
+}
+
+footer{
+}
+
+.forma {
+	background: rgba(247, 219, 193, 0.9);
+}
+
+table {
+	table-layout: fixed;
+	width: 60%;
+
+	border: 3px solid #164d25;
+	border-collapse: collapse;
+	text-align: center;
+	font-size: 2vw;
+	background-color: #eb958f;
+}
+
+th, td {
+	border: 3px solid #164d25;
+}
+
+th {
+	background-color: #6cad4e;
+}
+
+tr:nth-child(odd) td {
+	background-color: #f7dbc1;
+}
+
+tr:nth-child(even) td {
+	background-color: burlywood;
+}
+
+.table {
+	background: rgba(247, 219, 193, 0.9);
+}
+
+body{
+	text-align: center;
+
+}
+
+body li{
+	text-align: initial;
+}
+
+html {
+	box-sizing:border-box;
+	background: linear-gradient(#FAFAD2, #BDB76B);
+}
+
+@media screen and (min-width: 800px){
+
+	header {
+		height: 6em;
+		border-right: hidden;
+	}
+	nav {
+		height: 6em;
+		border: 0.3em solid olive;
+		border-left: hidden;
+		background-color: #164d25;
+	}
+
+	.main_info {
+		width: 960px;
+
+	}
+
+	table{
+		font-size: initial;
+	}
+
+	nav a {
+		color: #eb958f;
+	}
+}
