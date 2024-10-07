@@ -13,8 +13,8 @@ header {
 }
 
 #logo {
-	width: 5em;
-	height: 5em;
+	width: 5rem;
+	height: 5rem;
 }
 
 a {
@@ -30,7 +30,7 @@ nav {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	color: #eb958f;
 	background-color: #f7dbc1;
-	height: 5em;
+	height: 6rem;
 }
 
 footer{
@@ -80,12 +80,7 @@ body li{
 	text-align: initial;
 }
 
-html {
-	box-sizing:border-box;
-	background: linear-gradient(#FAFAD2, #BDB76B);
-}
-
-@media screen and (min-width: 800px){
+@media screen and (min-width: 768px){
 
 	header {
 		height: 6em;
