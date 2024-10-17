@@ -3,11 +3,11 @@ document.addEventListener("DOMContentLoaded", function () {
         const price = parseInt(document.getElementById("product").value);
         const quantity = parseInt(document.getElementById("quantity").value);
 
-        if (isNaN(quantity) || quantity < 1) { 
-            document.getElementById("result").innerText = "Введите корректное значение!"; 
+        if (Number.isNaN(quantity) || quantity < 1) {
+            document.getElementById("result").innerText = "Некорректно!";
         } else {
-            const total = price * quantity; 
-            document.getElementById("result").innerText = "Итого: " + total + " руб."; 
+            const total = price * quantity;
+            document.getElementById("result").innerText = "Итого: " + total + " р.";
         }
     });
 });
