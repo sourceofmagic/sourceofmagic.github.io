@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+</head>
+<body>
+    <div id="servPrice">
+        <h1>Ультра-калькулятор 3000 турбо макс</h1>
+        <form>
+
+            <div id="servicesInput">
+                <h3>Выберите услугу:</h3>
+                <label><input type="radio" name="serviceType" value="1" />Консультация у врача-терапевта</label>
+                <label><input type="radio" name="serviceType" value="2" />Доставка пиццы</label>
+                <label><input type="radio" name="serviceType" value="3" />Стрижка в самом модном салоне</label>
+            </div>
+            <br />
+
+            <div id="QuantityInput">
+                <h3>Количество:</h3>
+                <input id="quantity" value="1"/>
+            </div>
+            <br />
+
+            <div id="optionsInput">
+                <h3>Выберите предпочитаемую пиццу из списка: </h3>
+                <select id="options">
+                    <option value="200">Пеперони 200р</option>
+                    <option value="250">Маргарита 250р</option>
+                    <option value="300">4 сыра 300р</option>
+                    <option value="500">Гавайская 500р</option>
+                </select>
+            </div>
+            <br />
+
+            <div id="propertiesInput">
+                <h3>Дополнительные услуги нашего салона: </h3>
+                <label><input type="checkbox" id="prop" />Мытьё головы +100р</label>
+            </div>
+            <br />
+            <div id="result">.</div>
+        </form>
+    </div>
+    <script src="events.js"></script>
+</body>
+</html>
